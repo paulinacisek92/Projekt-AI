@@ -1,0 +1,79 @@
+<body style="text-align: center">
+
+  <h1>Wybierz grupę:</h1>
+
+<div class="btn-group" role="group" style="margin-bottom: 20px">
+    <button type="button" class="btn btn-primary" 
+    *ngFor="let grupa of listaGrup" 
+    style="margin-right: 10px" 
+    (click)="obslugaGrupyPrzyciskow($event);pobierzListeZajec();"
+    value="{{grupa.numerGrupy}}">
+      {{grupa.numerGrupy}}
+    </button>
+  </div>
+
+  <div class="alert alert-primary" role="alert" style="width: 30%;margin-left: 35%;margin-right: 35%">
+      Plan na tydzień: {{pierwszyDzien}}  -  {{ostatniDzien}}
+    </div>
+  
+  <table class="table table-bordered table-dark" style="margin-top: 20px; width: 80%; margin-left: 10%; margin-right: 10%">
+      <thead>
+        <tr>
+          <th *ngFor="let kolumna of kolumny">
+            <b>{{kolumna}}</b>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let zajecia of listaZajec; let i=index;">
+            <td>
+              <p>{{bloki[i].numerBloku}}</p>
+              <p>{{bloki[i].godzinaRozpoczecia }} - {{bloki[i].godzinaZakonczenia }}</p>
+            </td>
+            <td>
+              <p>{{zajecia[0].nazwaPrzedmiotu}}</p>
+              <p>{{zajecia[0].personaliaProwadzacego }}</p>
+              <p>{{zajecia[0].numerSali }}</p>
+            </td>
+            <td>
+              <p>{{zajecia[1].nazwaPrzedmiotu}}</p>
+              <p>{{zajecia[1].personaliaProwadzacego }}</p>
+              <p>{{zajecia[1].numerSali }}</p>
+            </td>
+            <td>
+              <p>{{zajecia[2].nazwaPrzedmiotu}}</p>
+              <p>{{zajecia[2].personaliaProwadzacego }}</p>
+              <p>{{zajecia[2].numerSali }}</p>
+            </td>
+            <td>
+              <p>{{zajecia[3].nazwaPrzedmiotu}}</p>
+              <p>{{zajecia[3].personaliaProwadzacego }}</p>
+              <p>{{zajecia[3].numerSali }}</p>
+            </td>
+            <td>
+              <p>{{zajecia[4].nazwaPrzedmiotu}}</p>
+              <p>{{zajecia[4].personaliaProwadzacego }}</p>
+              <p>{{zajecia[4].numerSali }}</p>
+            </td>
+            <td>
+              <p>{{zajecia[5].nazwaPrzedmiotu}}</p>
+              <p>{{zajecia[5].personaliaProwadzacego }}</p>
+              <p>{{zajecia[5].numerSali }}</p>
+            </td>
+            <td>
+              <p>{{zajecia[6].nazwaPrzedmiotu}}</p>
+              <p>{{zajecia[6].personaliaProwadzacego }}</p>
+              <p>{{zajecia[6].numerSali }}</p>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+
+      <div class="btn-group" role="group" style="margin-bottom: 20px">
+        <button type="button" class="btn btn-success" style="margin-right: 20px" 
+        (click)="poprzedni();pobierzListeZajec()">Poprzedni tydzień</button>
+        <button type="button" class="btn btn-success"
+        (click)="kolejny();pobierzListeZajec();">Następny tydzień</button>
+      </div>
+
+</body>

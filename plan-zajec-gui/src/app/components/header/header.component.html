@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+  <a class="navbar-brand" routerLink="/home"><b>Strona główna</b></a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/plan-zajec-grupy">Plan zajęć grupy</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/plan-zajec-nauczyciela">Plan zajęć nauczyciela</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" > <b>Aktualna data:</b> {{aktualnyCzas}}</a>
+        </li>
+      </ul>
+  </div>
+  </nav>
