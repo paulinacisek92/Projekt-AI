@@ -1,0 +1,10 @@
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (1, '2018-11-30', 1, 1, 1, 1, 1);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (2, '2019-12-30', 2, 1, 1, 1, 1);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (3, '2019-12-31', 3, 2, 1, 2, 2);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (4, '2019-12-24', 5, 3, 1, 3, 3);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (5, '2018-12-26', 4, 2, 1, 3, 4);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (6, '2018-12-03', 1, 1, 1, 1, 1);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (7, '2019-01-03', 1, 1, 1, 1, 1);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (8, '2019-01-03', 2, 1, 1, 1, 1);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (9, '2019-02-24', 1, 1, 1, 1, 1);
+INSERT INTO `plan-zajec`.zajecia (id, dzien_zajec, blok_czasowy_id, grupa_id, prowadzacy_id, przedmiot_id, sala_id) VALUES (10, '2018-12-09', 1, 1, 1, 1, 1);
